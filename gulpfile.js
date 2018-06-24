@@ -69,6 +69,6 @@ gulp.task('browserSync', function () {
   });
 
   gulp.task('build', function (callback) {
-    runSequence('clean:dist', ['default', 'fonts'], 'useref', 'scripts',
+    runSequence('clean:dist', ['default'], 'useref', 'scripts',
       callback)
  });
